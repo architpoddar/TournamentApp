@@ -7,7 +7,7 @@ using Xamarin.Forms;
 namespace TournamentApp.ViewModels
 {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
-    public class ItemDetailViewModel : BaseViewModel
+    public class ItemDetailViewModel : ViewModelBase
     {
         private string itemId;
         private string text;
@@ -43,10 +43,10 @@ namespace TournamentApp.ViewModels
         {
             try
             {
-                var item = await DataStore.GetItemAsync(itemId);
-                Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                //var item = await DataStore.GetItemAsync(itemId);
+                //Id = item.Id;
+                //Text = item.Text;
+                //Description = item.Description;
             }
             catch (Exception)
             {

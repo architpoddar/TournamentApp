@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace TournamentApp.ViewModels
 {
-    public class NewItemViewModel : BaseViewModel
+    public class NewItemViewModel : ViewModelBase
     {
         private string text;
         private string description;
@@ -35,7 +35,7 @@ namespace TournamentApp.ViewModels
         public string Description
         {
             get => description;
-            set => SetProperty(ref description, value);
+            set => OnPropertyChanged(); //SetProperty(ref description, value);
         }
 
         public Command SaveCommand { get; }
@@ -56,7 +56,7 @@ namespace TournamentApp.ViewModels
                 Description = Description
             };
 
-            await DataStore.AddItemAsync(newItem);
+            //await DataStore.AddItemAsync(newItem);
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");

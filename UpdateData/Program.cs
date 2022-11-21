@@ -160,7 +160,7 @@ async Task ImportPlayers()
 
             foreach(var player in players)
             {
-                await firebaseHelper.AddPlayer(player);
+               // await firebaseHelper.AddPlayer(player);
             }
         }
     }

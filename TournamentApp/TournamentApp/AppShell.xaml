@@ -2,7 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:TournamentApp.Views"
-       Title="TournamentApp"
+       Title="YPL 8"
        x:Class="TournamentApp.AppShell">
 
     <!--
@@ -29,11 +29,6 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-    </TabBar>
-
     <!--
         If you would like to navigate to this content you can do so by calling
         await Shell.Current.GoToAsync("//LoginPage");
@@ -42,5 +37,9 @@
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
 
-
+    <TabBar Route="Home">
+        <ShellContent Title="Dashboard" Icon="icon_about.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}" />
+        <ShellContent Title="Payment" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+    </TabBar>
+    
 </Shell>
