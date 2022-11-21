@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406588916511",
+    "project_id": "ypl8app",
+    "storage_bucket": "ypl8app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406588916511:android:133c0a3a50baf0adb0662a",
+        "android_client_info": {
+          "package_name": "com.ypl.season8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406588916511-kjr7n7fcfeao21elufmthjeoeq6091do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6WjSewUC0ltud2F7CMUqCXyAHLaSlTLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406588916511-kjr7n7fcfeao21elufmthjeoeq6091do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
