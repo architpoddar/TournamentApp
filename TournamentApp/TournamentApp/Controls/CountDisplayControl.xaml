@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TournamentApp.Controls.CountDisplayControl"
+             x:Name="countDisplayControl">
+  <ContentView.Content>
+        <Frame 
+            HasShadow="True" 
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            CornerRadius="10"
+            HeightRequest="65">
+
+            <Grid
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                RowDefinitions="35,30">
+
+                <Label
+                    Grid.Row="0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="{Binding Count, Source={x:Reference countDisplayControl}}"
+                    FontSize="30"
+                    TextColor="Black"
+                    FontAttributes="Bold" />
+                
+                <Label
+                    Grid.Row="1"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="{Binding Category, Source={x:Reference countDisplayControl}}"
+                    FontSize="16" />
+            </Grid>
+            
+        </Frame>
+  </ContentView.Content>
+</ContentView>

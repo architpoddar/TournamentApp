@@ -7,7 +7,10 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
+            
             <Color x:Key="Primary">#072AC8</Color>
+            <Color x:Key="Accent">#5f7bf9</Color>
+            
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
@@ -27,6 +30,7 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            
         </ResourceDictionary>        
     </Application.Resources>
 </Application>

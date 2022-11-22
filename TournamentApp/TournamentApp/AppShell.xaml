@@ -38,8 +38,9 @@
     </TabBar>
 
     <TabBar Route="Home">
-        <ShellContent Title="Dashboard" Icon="icon_about.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}" />
-        <ShellContent Title="Payment" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Dashboard" Icon="ic_dashboard.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}" />
+        <ShellContent Title="Players" Icon="ic_player.png" ContentTemplate="{DataTemplate local:PlayersListPage}" />
+        <ShellContent Title="Payment" Icon="ic_payment.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
     
 </Shell>
